@@ -1,0 +1,19 @@
+Convert to new version OES 1c
+
+1. Replace in all ObjectType definitions:
+     supertypeName: "Object",
+   with
+     supertypeName: "oBJECT",
+   
+2. Replace in all EventType definitions:
+   a)  supertypeName: "Event",
+     with
+       supertypeName: "eVENT",
+   b) "applyRule" with "onEvent"
+
+3. Replace in scenario.js
+   a) "scenario.model" with "sim.model"
+   b) "scenario" with "sim.scenario"
+
+5. If needed, set in simulation.html:
+   <script src="../../../../lib/loadManager.js"></script>

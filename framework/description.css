@@ -1,0 +1,109 @@
+body {
+    color: black;
+    margin: 1em auto;
+    hyphens: auto;
+}
+@media screen {
+    body {
+        background-color: #f8f8f8;
+        font: 1rem 'Arial', sans-serif;
+        line-height: 1.1;  /* HTML5 Boilerplate */
+        max-width: 768px;
+        padding: 8px;
+    }
+}
+@media print {
+    body {
+        font: 10pt 'TimesNewRoman', serif;
+        background-color: white;
+    }
+}
+
+header > p:first-child {
+    margin-top: 0.2em;
+    margin-bottom: 0.3em;
+}
+header > h1#title {
+    margin-top: 0em;
+    margin-bottom: 0.33em;
+}
+header > h1#title > div {  /* hyperlink */
+    display: inline-block;
+    margin-left: 2em;
+    font-size: 45%;
+    width: 5em;
+}
+header > h2 {
+    font-size: smaller;
+    margin-top: 0;
+}
+/* Make (sub)section headings smaller */
+header>section>h1, body>section>h1 {
+    font-size: 1.1em;
+    margin-bottom: 0.33em;
+}
+body>section>section>h1 {
+    font-size: 1em;
+}
+/* Collapse section content */
+.collapsed > *:not(:first-child) {
+    display:none;
+}
+body > section > h1 {
+    background-color: azure;
+    margin-bottom: 0.2em;
+}
+body > section > h1 > span {
+    margin-right: 0.5em;
+}
+body section p {
+    margin-top: 0em;
+    margin-bottom: 0.33em;
+}
+
+table {
+    border: thin solid black;
+    margin: 1em auto;
+    border-collapse: collapse;
+    empty-cells: show;
+    counter-increment: tables;
+}
+table td, table th {
+    border: thin solid black;
+    padding: 0.2em;
+}
+table > caption {
+    page-break-before: avoid;
+    font-style: italic;
+    text-align: center;
+    text-indent: 1.6em;
+    margin-bottom: 1em;
+}
+figure {
+    margin: auto;
+    text-align: center;
+}
+figure.right {
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+figure > figcaption {
+    font-size: smaller;
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+p#metaData {
+    font-size: smaller;
+}
+sup.expl-req {
+    background-color: lime;
+}
+/* Show explanation with smaller font */
+div.expl {
+    display: none;
+    font-size: smaller;
+    margin-top: 0.2em;
+    background-color: palegreen;
+}
