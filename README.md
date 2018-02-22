@@ -1,4 +1,4 @@
 "# mafia-simulation"
 "# mafia-simulation-master-thesis"
 
-Open /Mafia/Simulation.html to test.
+Open /Mafia/simulation.html to test.
